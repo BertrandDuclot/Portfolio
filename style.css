@@ -1,31 +1,112 @@
-/* Comment */
+/* Notes à faire:
+
+- import @
+- responsive
+- animations
+
+*/
+
 * {
   box-sizing: border-box;
-  margin: 10px;
-  /*margin: 50px auto;*/
-  /*padding: 0;*/
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100vh;
+  width: 100%;
+}
+
+.bienvenue {
+  text-align: center;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
 /* Header */
 
-h1 {
+.bienvenue {
+  margin: 2rem;
 }
 
 .links {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.links > a {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.cv {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.projectsdescription {
+  margin: 2rem 0;
+  text-align: center;
 }
 
 .description {
+  text-align: center;
 }
 
 /* Main */
 
+/* All projects */
+
+.projects {
+  margin: 0 2rem;
+}
+
+.allprojects {
+  border: 2px solid rgb(191, 191, 201);
+  box-shadow: 5px 5px rgb(202, 228, 236);
+  display: flex;
+  gap: 3rem;
+  border-radius: 5px;
+}
+
+.description-projet-container {
+  padding: 1rem;
+}
+
+.description-projet {
+  margin-top: 1rem;
+}
+
+.link-container {
+  display: flex;
+  margin: 2rem 5rem 0 auto;
+}
+
+.link-container > * {
+  margin: 0 2rem;
+  margin-left: auto;
+}
+
+/* Frontend */
+
+.fprojects {
+  margin: 2rem 0;
+}
+
+/* Backend */
+
+.bprojects {
+  margin: 2rem 0;
+}
+
 /* Footer */
+
+footer {
+  text-align: center;
+}
