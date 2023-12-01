@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -13,67 +13,95 @@
       referrerpolicy="no-referrer" />
     <title>Portfolio de Bertrand</title>
   </head>
+
   <body>
-    <!--Header-->
-    <div class="container">
+    <!--Main image-->
+    <div class="main-page" id="showcase">
+
     <header>
       <div class="welcome">
         <h1>
           Bienvenue
         </h1>
       </div>
+
+      <!-- Icons -->
       <section class="links">
         <a href="google.fr"><i class="fa-brands fa-linkedin fa-3x" style="color: #a2a7af; "></i></i></a>
         <a href="google.fr"><i class="fa-brands fa-github fa-3x" style="color: #a2a7af;"></i></i></a>
       </section>
 
-      <!--Description-->
+      <!-- Main description-->
       <section class="description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</section>
 
-      <!--Download CV-->
-      <section class="cv">Mon CV à télécharger ici</section>
+      <!--Download CV
+      <section class="cv">...</section>-->
 
-      <!--Ongoing projects-->
-      <section class="projectsdescription">Projects à venir..</section>
-    </header>
+      <!--CV Button-->
+      <section href="#" class="read-button">En savoir plus</section>
+    </div>
 
+    </header>  
+    <!--Page Container-->
+    <div class="container">
+   
     <!--Projects-->
     <main>
-      <!--Frontend Projects-->
-      <section class="projects">
-        <h1 class="projectstitle">Frontend</h1>
-        <section class="frontend">
-          <!--Frontend project 1-->
-          <div class="fproject1 allprojects">
-            <div class="description-project-container">
-              <div class="titre-projet">Titre du projet</div>
-              <div class="description-project">aphicLorem ipsum is placeholder text commonly used in the graphic</div>
+      <div class="projects-page">
+        
+          <!--Ongoing projects-->
+          <section class="projectsdescription">Projects à venir..</section>
+
+        <!--Frontend Projects-->
+        <section class="projects">
+          <h1 class="projectstitle">Frontend</h1>
+          <section class="frontend">
+
+            <!--Frontend project 1-->
+            <div class="fproject1 allprojects">
+              <div class="description-project-container">
+                <div class="titre-projet">Titre du projet</div>
+                <div class="description-project">aphicLorem ipsum is placeholder text commonly used in the graphic</div>
+              </div>
+
+              <div class="link-container" >
+                <a class="link-project" href="google.fr">Demo</a>
+                <a class="link-git" href="">Git</a>
+              </div>
             </div>
 
-            <div class="link-container" >
-              <a class="link-project" href="google.fr">Demo</a>
-              <a class="link-git" href="">Git</a>
+            <!--Frontend project 2-->
+            <div class="fproject1 allprojects">
+              <div class="description-project-container">
+                <div class="titre-projet">Titre du projet</div>
+                <div class="description-project">aphicLorem ipsum is placeholder text commonly used in the graphic</div>
+              </div>
+
+              <div class="link-container">
+                <a class="link-project" href="google.fr">Demo</a>
+                <a class="link-git" href="">Git</a>
+              </div>
             </div>
-          </div>
-          <!--Frontend project 2-->
-          <div class="fproject1 allprojects">
-            <div class="description-project-container">
-              <div class="titre-projet">Titre du projet</div>
-              <div class="description-project">aphicLorem ipsum is placeholder text commonly used in the graphic</div>
+          </section>
+
+          <!--Backeend Projects-->
+          <h1 class="projectstitle">Backend</h1>
+          <section class="backend">
+
+          <!--Backend project 1-->
+            <div class="bproject1 allprojects">
+              <div class="description-project-container">
+                <div class="titre-projet">Titre du projet</div>
+                <div class="description-project">aphicLorem ipsum is placeholder text commonly used in the graphic</div>
+              </div>
+
+              <div class="link-container">
+                <a class="link-project" href="google.fr">Demo</a>
+                <a class="link-git" href="">Git</a>
+              </div>
             </div>
 
-            <div class="link-container">
-              <a class="link-project" href="google.fr">Demo</a>
-              <a class="link-git" href="">Git</a>
-            </div>
-          </div>
-
-        </section>
-
-        <!--Backeend Projects-->
-        <h1 class="projectstitle">Backend</h1>
-        <section class="backend">
-        <!--Backend project 1-->
+          <!--Backend project 2-->
           <div class="bproject1 allprojects">
             <div class="description-project-container">
               <div class="titre-projet">Titre du projet</div>
@@ -85,29 +113,16 @@
               <a class="link-git" href="">Git</a>
             </div>
           </div>
-
-        <!--Backend project 2-->
-        <div class="bproject1 allprojects">
-          <div class="description-project-container">
-            <div class="titre-projet">Titre du projet</div>
-            <div class="description-project">aphicLorem ipsum is placeholder text commonly used in the graphic</div>
-          </div>
-
-          <div class="link-container">
-            <a class="link-project" href="google.fr">Demo</a>
-            <a class="link-git" href="">Git</a>
-          </div>
         </div>
-        
+          
+          </section>
 
-        </section>
+      </section>
+      </main>
 
-    </section>
-    </main>
-
-    <!--Footer-->
-    <footer>Footer Keywords</footer>
-  </div>
+      <!--Footer-->
+      <footer>Footer Keywords</footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
