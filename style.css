@@ -39,24 +39,51 @@ Importants :
 
 /* Typewriter effect */
 
-.welcome {
-}
-
 h1 {
   /*display: inline;*/
   /*border-bottom: 1px solid #72c3c9;*/
 }
 
 .main-page {
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
+}
+
+.main-page-content {
 }
 
 header {
+}
+
+/* Navigation bar */
+
+.navigation-bar {
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+  position: absolute;
+  top: 2%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navigation-bar a {
+  margin-right: 2rem;
+  text-decoration: none;
+  color: #333; /* Adjust color as needed */
+  font-weight: bold;
+  text-align: center;
+}
+
+li {
+  text-align: center;
 }
 
 /* Body */
@@ -284,3 +311,9 @@ footer {
   }
 }
 */
+
+@media screen and (max-width: 500px) {
+  body {
+    color: red;
+  }
+}
