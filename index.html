@@ -18,16 +18,14 @@
     <!--Main image-->
     <div class="main-page" id="showcase">
 
-    <header>
-      
       <!--Navigation bar-->
+    <div class="sticky">
       <div class="navigation-bar">  
-        <ul>
-          <li><a href="#"> Accueil </a></li>
-          <li><a href="#"> Projets </a></li>
-          <li><a href="#"> CV </a></li>
-        </ul>
+          <a href="#"> Accueil </a>
+          <a href="#projects-page"> Projets </a>
+          <a href="#cv-page"> CV </a>
       </div>
+    </div>
 
       <div class="main-page-content">
       <!--Welcome-->
@@ -37,32 +35,33 @@
         </h1>
       </div>
 
-      <!-- Icons -->
-      <section class="links">
-        <a href="google.fr"><i class="fa-brands fa-linkedin fa-3x" style="color: #a2a7af; "></i></i></a>
-        <a href="google.fr"><i class="fa-brands fa-github fa-3x" style="color: #a2a7af;"></i></i></a>
-      </section>
-
       <!-- Main description-->
       <section class="description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</section>
+
+      <!-- Icons -->
+      <section class="links">
+        <a href="https://www.linkedin.com/in/bertrand-duclot-a7369663"><i class="fa-brands fa-linkedin fa-3x" style="color: #5982c5; "></i></i></a>
+        <a href="mailto:b.duclot@gmail.com"><i class="fa-solid fa-envelope fa-3x" style="color: #92969c;"></i></i></a>
+        <a href="https://github.com/BertrandDuclot"><i class="fa-brands fa-github fa-3x" style="color: #000000;"></i></i></a>
+      </section>
 
       <!--Download CV
       <section class="cv">...</section>-->
 
       <!--CV Button-->
-      <section href="#" class="read-button">Voir les projets</section>
+      <a href="#projects-page"><section class="read-button">Voir les projets</section></a>
 
       
     </div>
   </div>
 
-    </header>  
+    
     <!--Page Container-->
     <div class="container">
    
     <!--Projects-->
     <main>
-      <div class="projects-page">
+      <a id="projects-page"><div class="projects-page"></a>
 
         <h1 class="title-my-projects">Mes projets</h1>
         
@@ -137,7 +136,7 @@
 
 
       <!--Section CV-->
-    <div class="cv-page">
+    <div id="cv-page" class="cv-page">
       <h1 class="cv-title">Mon CV</h1> 
       
         <a class="cv-link" href="#" download>
@@ -150,7 +149,8 @@
 
     <!--Footer-->
     <footer>
-      <div class="email-footer">Email</div>
+      <div class="email-footer">Contact</div>
+      <div class="email-footer">Email : b.duclot@gmail.com</div>
       <div class="icons-footer">Icons</div>
     </footer>
 
