@@ -2,8 +2,6 @@
 
 Autres :
 - import @
-- responsive
-- animations
 - Mode Eng/FR
 - zoom
 - jour/nuit
@@ -12,19 +10,18 @@ Autres :
 - livres d'informatique en cours de Lecture
 
 Importants :
-- Email / contact
-- fleche/bouton pour aller aux projets
 - Police de caractère
 - Photo
-- Menu de nagivation
 - Typewriter
 - CV à télécharger : https://dev.to/erdeepbag/create-direct-download-link-from-github-files-35n7#:~:text=You%20can%20create%20direct%20download,this%20link%20for%20web%20development.
-- Pour en savoir plus... CV
+- mise en forme code
+- animations
 
 */
 
 * {
   box-sizing: border-box;
+  font-family: garamond, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -39,9 +36,22 @@ Importants :
 
 /* Typewriter effect */
 
+.title-my-projects,
+.cv-title {
+  font-size: 40px;
+}
+
 h1 {
-  /*display: inline;*/
-  /*border-bottom: 1px solid #72c3c9;*/
+  display: inline;
+  border-bottom: 1px solid #72c3c9;
+}
+
+.projects-title {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
 }
 
 .main-page {
@@ -60,7 +70,7 @@ h1 {
   justify-content: center;
   position: fixed;
   border-bottom: #5e5858 0.1px solid;
-  opacity: 80%;
+  font-size: 22px;
 }
 
 .sticky {
@@ -71,21 +81,22 @@ h1 {
 .navigation-bar a {
   margin: 1.5rem;
   text-decoration: none;
-  color: #333;
+  color: #746f63;
   font-weight: bold;
   text-align: center;
 }
 
-/* Body */
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
+.navigation-bar > a:hover {
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
+/* Body */
+
 .main-page {
-  background: linear-gradient(-45deg, #d4b2a7, #e9e3e3, #a1d0e0, #c3ece3);
+  background: linear-gradient(-45deg, #ece9e0, #b1e4f5, #c3ece3);
   background-size: 400% 400%;
-  animation: gradient 8s ease infinite;
+  animation: gradient 5s ease infinite;
 }
 
 @keyframes gradient {
@@ -108,27 +119,35 @@ body {
   text-align: center;
   margin: 0;
 }
-
 .read-button {
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
-  border: #ca4a18 1px solid;
+  border: #746f63 1px solid;
   border-radius: 40px;
   padding: 20px;
   margin: 4vh auto;
   min-width: 200px;
   max-width: 200px;
   cursor: pointer;
+  color: black;
 }
 
-.read-button:hover {
-  background-color: #ca4a18;
+a:link {
+  text-decoration: none;
+}
+
+.read-button:hover,
+.cv-link:hover {
+  /*ackground-color: #e6e1e1;*/
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 /* Header */
 
 .welcome {
   margin: 2rem;
+  font-size: 25px;
 }
 
 .links {
@@ -152,7 +171,7 @@ body {
   margin: 0rem 5rem 3rem 5rem;
   font-weight: bold;
   color: #7e8081;
-  font-size: 15px;
+  font-size: 18px;
   border: #c1d3d8 1px solid;
   background-color: #ffffff;
   border-radius: 10px;
@@ -162,6 +181,10 @@ body {
 
 .description {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
 }
 
 /* Main */
@@ -226,7 +249,7 @@ body {
 }
 
 .link-git:hover {
-  background-color: #6ae6b4;
+  background-color: #11b3c9;
 }
 
 /* Frontend */
@@ -236,7 +259,7 @@ body {
 /* CV */
 
 .cv-page {
-  background-color: #cfd4c8;
+  background-color: #ece9e0;
   min-height: 15rem;
   width: 100%;
   text-align: center;
@@ -247,15 +270,20 @@ body {
 }
 
 .cv-title {
-  border-bottom: 1px solid #72c3c9;
   margin-top: 5vh;
 }
 
 .cv-link {
-  border: #3fc4c9 1px solid;
-  background-color: #b9d4c3;
+  font-size: 20px;
+  text-decoration: none;
+  border: #746f63 1px solid;
   border-radius: 40px;
   padding: 20px;
+  margin: 4vh auto;
+  min-width: 200px;
+  max-width: 200px;
+  cursor: pointer;
+  color: black;
   cursor: pointer;
   text-decoration: none;
   margin: 5vh;
@@ -264,13 +292,14 @@ body {
 /* Footer */
 
 footer {
-  background-color: #e3ebe8;
+  background-color: #e6dfcf;
   width: 100%;
   min-height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  line-height: 30px;
 }
 
 /*
